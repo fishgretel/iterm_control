@@ -30,7 +30,7 @@ While code for `SetProfile` and `StealFocus` works if the related setting (*Adva
 With [fisherman]
 
 ```
-fisher gretel/iterm_control
+fisher fishgretel/iterm_control
 ```
 
 ## Usage
