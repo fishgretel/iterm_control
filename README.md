@@ -21,7 +21,7 @@ But [the code](https://github.com/gnachman/iTerm2/blob/master/sources/iTermAdvan
 > Disable potentially insecure escape sequences
 > RemoteHost, StealFocus, CurrentDir, SetProfile, CopyToClipboard, EndCopy, File, SetBackgroundImageFile
 
-While code for `SetProfile` and `StealFocus` works if the related setting (*Advanced: Disable potentially insecure escape sequences*) is not enabled it is recommended to leave this **cosmetical** set of **dangerous** features of.
+While the supplied functions for `SetProfile` and `StealFocus` work if the related setting (*Advanced: Disable potentially insecure escape sequences*) is not enabled it is recommended to leave these **cosmetical** set of **dangerous** features of. Therefore, they are commented out.
 
 > What is dangerous? There might be bugs lurking in the *iTerm2* codebase - this is why the actual authors allow to keep it disabled.
 
