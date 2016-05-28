@@ -10,7 +10,7 @@ This plugin wraps around the  escape codes to give some comfort:
 * Set title of tab
 * Set marks on the buffer
 * Change cursor shape
-* Adjust color of the *chrome* (title and tab bar colors)
+* Adjust color of the *chrome* (title and tab bar colors).
 
 ## Security
 
@@ -19,11 +19,18 @@ This plugin wraps around the  escape codes to give some comfort:
 But [the code](https://github.com/gnachman/iTerm2/blob/master/sources/iTermAdvancedSettingsModel.m) reads:
 
 > Disable potentially insecure escape sequences
-> RemoteHost, StealFocus, CurrentDir, SetProfile, CopyToClipboard, EndCopy, File, SetBackgroundImageFile
+>
+> `RemoteHost, StealFocus, CurrentDir, SetProfile, CopyToClipboard, EndCopy, File, SetBackgroundImageFile`
 
-While the supplied functions for `SetProfile` and `StealFocus` work if the related setting (*Advanced: Disable potentially insecure escape sequences*) is not enabled it is recommended to leave these **cosmetical** set of **dangerous** features of. Therefore, they are commented out.
+While the supplied functions for `SetProfile` and `StealFocus` work
 
-> What is dangerous? There might be bugs lurking in the *iTerm2* codebase - this is why the actual authors allow to keep it disabled.
+* if the related setting ('_Advanced: Disable potentially insecure escape sequences_') is not enabled
+
+it is recommended to leave these **cosmetical** set of **dangerous** features off. Therefore, they are commented out.
+
+> What is dangerous?
+>
+> There might be bugs lurking in the *iTerm2* codebase - this is why the actual authors allow to keep it disabled.
 
 ## Install
 
